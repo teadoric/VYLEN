@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VYLEN | Modern Workspace & Lifestyle Essentials</title>
+  <meta name="description" content="Thoughtfully selected products for better workspaces, smarter routines, and modern living.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand-title">VYLEN</a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="./index.html" class="nav-link active">Home</a></li>
+          <li><a href="./products.html" class="nav-link">Shop</a></li>
+          <li><a href="./products.html?category=Workspace" class="nav-link">Workspace</a></li>
+          <li><a href="./products.html?category=Tech" class="nav-link">Tech</a></li>
+          <li><a href="./products.html?category=Organization" class="nav-link">Organization</a></li>
+          <li><a href="./products.html?category=Accessories" class="nav-link">Accessories</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=2000&q=85" alt="VYLEN Curated Workspace" />
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Curated Collection</div>
+        <h1 class="hero-title">Elevate Your Everyday.</h1>
+        <p class="hero-text">
+          Thoughtfully selected products for better workspaces, smarter routines, and modern living.
+        </p>
+        <a href="./products.html" class="btn-solid">SHOP NOW</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head" style="display: flex; justify-content: space-between; align-items: flex-end;">
+        <div>
+          <span class="section-eyebrow">Curated Selection</span>
+          <h2 class="section-title">FEATURED PRODUCTS</h2>
+          <p class="section-desc">Our selection of products worth making space for.</p>
+        </div>
+        <a href="./products.html" style="font-size: 0.8rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--text-main); border-bottom: 1.5px solid var(--text-main); padding-bottom: 2px;">View All (12) →</a>
+      </div>
+
+      <div class="product-grid" id="featured-products-grid">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop by Category Section -->
+  <section class="section" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Departments</span>
+        <h2 class="section-title">Shop by Category</h2>
+        <p class="section-desc">Functional design tailored for every corner of your daily setup.</p>
+      </div>
+
+      <div class="category-grid">
+        <!-- 1. Workspace -->
+        <a href="./products.html?category=Workspace" class="category-card">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=600&q=80" alt="Workspace" />
+          </div>
+          <div class="category-info">
+            <h3 class="category-name">WORKSPACE</h3>
+            <span class="category-link-text">EXPLORE →</span>
+          </div>
+        </a>
+
+        <!-- 2. Tech -->
+        <a href="./products.html?category=Tech" class="category-card">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80" alt="Tech" />
+          </div>
+          <div class="category-info">
+            <h3 class="category-name">TECH</h3>
+            <span class="category-link-text">EXPLORE →</span>
+          </div>
+        </a>
+
+        <!-- 3. Organization -->
+        <a href="./products.html?category=Organization" class="category-card">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=600&q=80" alt="Organization" />
+          </div>
+          <div class="category-info">
+            <h3 class="category-name">ORGANIZATION</h3>
+            <span class="category-link-text">EXPLORE →</span>
+          </div>
+        </a>
+
+        <!-- 4. Accessories -->
+        <a href="./products.html?category=Accessories" class="category-card">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?auto=format&fit=crop&w=600&q=80" alt="Accessories" />
+          </div>
+          <div class="category-info">
+            <h3 class="category-name">ACCESSORIES</h3>
+            <span class="category-link-text">EXPLORE →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Focus Section -->
+  <section class="section">
+    <div class="container" style="max-width: 800px; text-align: center;">
+      <span class="section-eyebrow">Our Philosophy</span>
+      <h2 class="section-title" style="margin-bottom: 20px;">Designed for Focus & Longevity</h2>
+      <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 30px;">
+        At VYLEN, we focus strictly on products that eliminate daily friction. Every piece in our collection is evaluated for structural build quality, ergonomic support, and timeless aesthetic design.
+      </p>
+      <a href="./about.html" class="btn-outline">READ OUR STORY</a>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">VYLEN</div>
+          <p class="footer-text">
+            Thoughtfully selected products for better workspaces, smarter routines, and modern living.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Shop</div>
+          <ul class="footer-nav">
+            <li><a href="./products.html">All Products</a></li>
+            <li><a href="./products.html?category=Workspace">Workspace</a></li>
+            <li><a href="./products.html?category=Tech">Tech</a></li>
+            <li><a href="./products.html?category=Organization">Organization</a></li>
+            <li><a href="./products.html?category=Accessories">Accessories</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-nav">
+            <li><a href="./about.html">About VYLEN</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Legal</div>
+          <ul class="footer-nav">
+            <li><a href="./disclosure.html">Affiliate Disclosure</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 VYLEN. All rights reserved.</p>
+        <p>Purchases completed through our affiliate links support our independent curation.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./products.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

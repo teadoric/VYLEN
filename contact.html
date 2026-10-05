@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | VYLEN</title>
+  <meta name="description" content="Get in touch with the VYLEN team for product inquiries and partnerships.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand-title">VYLEN</a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./products.html" class="nav-link">Shop</a></li>
+          <li><a href="./products.html?category=Workspace" class="nav-link">Workspace</a></li>
+          <li><a href="./products.html?category=Tech" class="nav-link">Tech</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Contact Content -->
+  <main class="container section" style="max-width: 680px;">
+    <span class="section-eyebrow">Get in Touch</span>
+    <h1 class="section-title" style="margin-bottom: 12px;">Contact VYLEN</h1>
+    <p class="section-desc" style="margin-bottom: 36px;">
+      Have a question regarding product recommendations or brand partnerships? Send us a message.
+    </p>
+
+    <div style="background: var(--bg-surface); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 32px;">
+      <form onsubmit="event.preventDefault(); document.getElementById('contact-alert').style.display='block'; this.reset();">
+        <div style="margin-bottom: 18px;">
+          <label style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Name</label>
+          <input type="text" required style="width: 100%; padding: 12px 14px; border: 1px solid var(--border-light); border-radius: var(--radius-sm); background: var(--bg-page); font-size: 0.95rem; outline: none;" />
+        </div>
+        <div style="margin-bottom: 18px;">
+          <label style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Email</label>
+          <input type="email" required style="width: 100%; padding: 12px 14px; border: 1px solid var(--border-light); border-radius: var(--radius-sm); background: var(--bg-page); font-size: 0.95rem; outline: none;" />
+        </div>
+        <div style="margin-bottom: 24px;">
+          <label style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Message</label>
+          <textarea rows="4" required style="width: 100%; padding: 12px 14px; border: 1px solid var(--border-light); border-radius: var(--radius-sm); background: var(--bg-page); font-size: 0.95rem; outline: none; resize: vertical;"></textarea>
+        </div>
+        <button type="submit" class="btn-solid" style="width: 100%;">SEND MESSAGE</button>
+      </form>
+      <div id="contact-alert" style="display: none; margin-top: 18px; padding: 14px; background: #edf7ed; color: var(--accent-green); border-radius: var(--radius-sm); text-align: center; font-size: 0.9rem; font-weight: 600;">
+        Thank you! Your message has been received.
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>© 2026 VYLEN. All rights reserved.</p>
+        <p><a href="./index.html" style="color: #9aa0a6;">Return to Home</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

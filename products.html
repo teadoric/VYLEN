@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All Products | VYLEN</title>
+  <meta name="description" content="Explore the full VYLEN collection of curated workspace and lifestyle essentials.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand-title">VYLEN</a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./products.html" class="nav-link active">Shop</a></li>
+          <li><a href="./products.html?category=Workspace" class="nav-link">Workspace</a></li>
+          <li><a href="./products.html?category=Tech" class="nav-link">Tech</a></li>
+          <li><a href="./products.html?category=Organization" class="nav-link">Organization</a></li>
+          <li><a href="./products.html?category=Accessories" class="nav-link">Accessories</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Shop Main Content -->
+  <main class="container section">
+    <div class="section-head">
+      <span class="section-eyebrow">The Catalog</span>
+      <h1 class="section-title">All Products</h1>
+      <p class="section-desc">Carefully vetted essentials designed for better focus and physical comfort.</p>
+    </div>
+
+    <!-- Category Filter Bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-category="all">All (12)</button>
+      <button class="filter-btn" data-category="Workspace">Workspace</button>
+      <button class="filter-btn" data-category="Tech">Tech</button>
+      <button class="filter-btn" data-category="Organization">Organization</button>
+      <button class="filter-btn" data-category="Accessories">Accessories</button>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="product-grid" id="shop-products-grid">
+      <!-- Populated dynamically via app.js -->
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">VYLEN</div>
+          <p class="footer-text">
+            Thoughtfully selected products for better workspaces, smarter routines, and modern living.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Shop</div>
+          <ul class="footer-nav">
+            <li><a href="./products.html">All Products</a></li>
+            <li><a href="./products.html?category=Workspace">Workspace</a></li>
+            <li><a href="./products.html?category=Tech">Tech</a></li>
+            <li><a href="./products.html?category=Organization">Organization</a></li>
+            <li><a href="./products.html?category=Accessories">Accessories</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-nav">
+            <li><a href="./about.html">About VYLEN</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Legal</div>
+          <ul class="footer-nav">
+            <li><a href="./disclosure.html">Affiliate Disclosure</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 VYLEN. All rights reserved.</p>
+        <p>Purchases completed through our affiliate links support our independent curation.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./products.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
